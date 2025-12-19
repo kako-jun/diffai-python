@@ -420,7 +420,7 @@ fn diffai_python(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(format_output, m)?)?;
 
     // Version
-    m.add("__version__", "0.4.0")?;
+    m.add("__version__", "0.4.1")?;
 
     Ok(())
 }
