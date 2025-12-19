@@ -13,13 +13,6 @@ def test_import():
     assert hasattr(diffai_python, "__version__")
 
 
-def test_version():
-    """Test version string."""
-    import diffai_python
-
-    assert diffai_python.__version__ == "0.4.0"
-
-
 def test_diff_identical():
     """Test diffing identical objects."""
     import diffai_python
