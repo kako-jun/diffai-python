@@ -4,6 +4,7 @@
 
 #![allow(clippy::useless_conversion)]
 #![allow(clippy::uninlined_format_args)]
+#![allow(deprecated)]
 
 use diffai_core::{
     diff as core_diff, diff_paths as core_diff_paths, format_output as core_format_output,
