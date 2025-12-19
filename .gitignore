@@ -1,12 +1,11 @@
-# Byte-compiled / optimized / DLL files
+# Claude Code
+.claude/settings.local.json
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -23,61 +22,23 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.venv/
+venv/
+ENV/
 
 # Rust
 target/
 Cargo.lock
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Virtual environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
-
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# Claude Code / Serena
-.claude/settings.local.json
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
 .serena/
-
-# MCP config (local)
 .mcp.json
-
-# Build artifacts
-*.whl
