@@ -1,0 +1,93 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "diffai-python"
+version = "0.4.0"
+description = "Python bindings for diffai - AI/ML model diff tool for PyTorch, Safetensors, NumPy, MATLAB tensor comparison. Powered by Rust for blazing fast performance."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "kako-jun" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Rust",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities"
+]
+keywords = [
+    "diff",
+    "ai",
+    "ml",
+    "pytorch",
+    "safetensors",
+    "numpy",
+    "matlab",
+    "tensor",
+    "machine-learning",
+    "deep-learning",
+    "model-comparison",
+    "pyo3",
+    "rust"
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kako-jun/diffai-python"
+Repository = "https://github.com/kako-jun/diffai-python"
+Issues = "https://github.com/kako-jun/diffai-python/issues"
+Documentation = "https://github.com/kako-jun/diffai-python#readme"
+
+[project.optional-dependencies]
+dev = [
+    "pytest >= 6.0",
+    "pytest-cov",
+    "black",
+    "isort",
+    "mypy",
+    "ruff"
+]
+
+[tool.maturin]
+bindings = "pyo3"
+find-interpreter = true
+compatibility = "manylinux2014"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')"
+]
+
+[dependency-groups]
+dev = [
+    "maturin>=1.9.1",
+    "pytest>=6.0",
+    "pre-commit>=3.0",
+]
