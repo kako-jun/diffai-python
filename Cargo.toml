@@ -13,7 +13,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 # Core diffai functionality
-diffai-core = "0.4"
+diffai-core = "0.5"
 
 # PyO3 for Python bindings
 pyo3 = { version = "0.24", features = ["extension-module"] }
