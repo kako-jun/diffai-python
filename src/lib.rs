@@ -412,7 +412,7 @@ fn build_options_from_kwargs(kwargs: Option<&Bound<'_, PyDict>>) -> PyResult<Dif
 /// Provides high-performance comparison of PyTorch, Safetensors, NumPy, and MATLAB files.
 /// Powered by Rust for blazing fast performance.
 #[pymodule]
-fn diffai_python(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn _diffai(m: &Bound<'_, PyModule>) -> PyResult<()> {
     // Main diff functions
     m.add_function(wrap_pyfunction!(diff, m)?)?;
     m.add_function(wrap_pyfunction!(diff_paths, m)?)?;
@@ -421,7 +421,7 @@ fn diffai_python(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(format_output, m)?)?;
 
     // Version
-    m.add("__version__", "0.4.1")?;
+    m.add("__version__", "0.5.0")?;
 
     Ok(())
 }

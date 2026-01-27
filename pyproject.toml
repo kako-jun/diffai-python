@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "diffai"
-version = "0.4.1"
+version = "0.5.0"
 description = "Python bindings for diffai - AI/ML model diff tool for PyTorch, Safetensors, NumPy, MATLAB tensor comparison. Powered by Rust for blazing fast performance."
 readme = "README.md"
 license = "MIT"
@@ -66,6 +66,8 @@ dev = [
 bindings = "pyo3"
 find-interpreter = true
 compatibility = "manylinux2014"
+python-source = "python"
+module-name = "diffai._diffai"
 
 [tool.ruff]
 line-length = 88

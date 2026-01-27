@@ -7,11 +7,12 @@ AI/MLモデルファイル（PyTorch, Safetensors, NumPy, MATLAB）の比較機�
 
 ```
 diffai-python/
-├── src/lib.rs                    # Rust PyO3 バインディング
-├── src/diffai_python/__init__.py # Python ラッパー
-├── Cargo.toml                    # Rust 依存関係
-├── pyproject.toml                # Python パッケージ設定
-└── tests/                        # pytest テスト
+├── src/lib.rs              # Rust PyO3 バインディング
+├── python/diffai/          # Pythonモジュール
+│   └── __init__.py         # re-export from ._diffai
+├── Cargo.toml              # Rust 依存関係
+├── pyproject.toml          # Python パッケージ設定
+└── tests/                  # pytest テスト
 ```
 
 ## 開発
