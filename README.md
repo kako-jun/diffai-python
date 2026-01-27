@@ -1,11 +1,11 @@
-# diffai-python
+# diffai
 
 Python bindings for diffai - AI/ML model diff tool for PyTorch, Safetensors, NumPy, and MATLAB tensor comparison.
 
 ## Installation
 
 ```bash
-pip install diffai-python
+pip install diffai
 ```
 
 ## Usage
