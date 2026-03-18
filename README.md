@@ -5,7 +5,7 @@ Python bindings for diffai - AI/ML model diff tool for PyTorch, Safetensors, Num
 ## Installation
 
 ```bash
-pip install diffai
+pip install diffai-python
 ```
 
 ## Usage
