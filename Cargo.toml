@@ -1,6 +1,6 @@
 [package]
 name = "diffai_python"
-version = "0.5.1"
+version = "0.5.2"
 edition = "2021"
 description = "Python bindings for diffai - AI/ML model diff tool"
 license = "MIT"
